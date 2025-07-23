@@ -1,0 +1,62 @@
+
+body {
+  background-color: #0d0d0d;
+  color: #00ffcc;
+  font-family: 'Press Start 2P', monospace;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #111;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px #00ffcc;
+}
+h1 {
+  margin: 0;
+}
+.category {
+  padding: 2rem;
+}
+.card {
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 1rem 0;
+  box-shadow: 0 0 15px #00ffcc60;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 0 25px #00ffcc;
+  transform: scale(1.02);
+}
+.buy-btn, .submit-btn {
+  background-color: #00ffcc;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin: 0.5rem 0;
+  font-family: 'Press Start 2P', monospace;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.buy-btn:hover, .submit-btn:hover {
+  background-color: #00ddb3;
+}
+input[type="text"], input[type="file"] {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  background-color: #0f0f0f;
+  border: 1px solid #00ffcc;
+  color: #00ffcc;
+}
+.qr-section {
+  margin: 1rem 0;
+  text-align: center;
+}
+.qr-section img {
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffcc;
+}

@@ -5,162 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DelhiMC Store</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>DelhiMC Store</h1>
   </header>
 
-  <main>
-    <section>
-      <h2>🏷️ Lifesteal Ranks</h2>
-      <div class="products">
-        <div class="product">
-  <h3>STAR</h3>
-  <p>₹29</p>
-  <button>Buy</button>
-  <form action="https://formsubmit.co/meyfuzrhman@gmail.com" method="POST">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/UPI-QR-code-sample.png" alt="UPI QR" />
-    <input type="text" name="In-Game Name" placeholder="Enter your Minecraft name" required />
-    
-    <input type="hidden" name="_subject" value="STAR Purchase" />
-    <button type="submit">Submit</button>
-  </form>
-</div>
-<div class="product">
-  <h3>VIP</h3>
-  <p>₹69</p>
-  <button>Buy</button>
-  <form action="https://formsubmit.co/meyfuzrhman@gmail.com" method="POST">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/UPI-QR-code-sample.png" alt="UPI QR" />
-    <input type="text" name="In-Game Name" placeholder="Enter your Minecraft name" required />
-    
-    <input type="hidden" name="_subject" value="VIP Purchase" />
-    <button type="submit">Submit</button>
-  </form>
-</div>
-<div class="product">
-  <h3>LEGENDARY</h3>
-  <p>₹129</p>
-  <button>Buy</button>
-  <form action="https://formsubmit.co/meyfuzrhman@gmail.com" method="POST">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/UPI-QR-code-sample.png" alt="UPI QR" />
-    <input type="text" name="In-Game Name" placeholder="Enter your Minecraft name" required />
-    
-    <input type="hidden" name="_subject" value="LEGENDARY Purchase" />
-    <button type="submit">Submit</button>
-  </form>
-</div>
-<div class="product">
-  <h3>GODLY</h3>
-  <p>₹210</p>
-  <button>Buy</button>
-  <form action="https://formsubmit.co/meyfuzrhman@gmail.com" method="POST">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/UPI-QR-code-sample.png" alt="UPI QR" />
-    <input type="text" name="In-Game Name" placeholder="Enter your Minecraft name" required />
-    
-    <input type="hidden" name="_subject" value="GODLY Purchase" />
-    <button type="submit">Submit</button>
-  </form>
-</div>
-<div class="product">
-  <h3>CUSTOM</h3>
-  <p>₹299</p>
-  <button>Buy</button>
-  <form action="https://formsubmit.co/meyfuzrhman@gmail.com" method="POST">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/UPI-QR-code-sample.png" alt="UPI QR" />
-    <input type="text" name="In-Game Name" placeholder="Enter your Minecraft name" required />
-    <input type="text" name="Custom Rank Name" placeholder="Enter desired rank name" required />
-    <input type="hidden" name="_subject" value="CUSTOM Purchase" />
-    <button type="submit">Submit</button>
-  </form>
-</div>
+  <section class="category">
+    <h2>🏷️ Lifesteal Ranks</h2>
+
+    <div class="card lightning">
+      <h3>STAR</h3>
+      <p>₹29</p>
+      <button class="buy-btn" onclick="scrollToForm()">Buy</button>
+      <div class="qr-section">
+        <img src="upi-qr.png" alt="UPI QR Code" />
+        <p>Scan & Pay via UPI</p>
       </div>
-    </section>
+      <form action="https://formsubmit.co/meyfuzrhman@gmail.com" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
+        <input type="text" name="Minecraft Username" placeholder="Enter your Minecraft name" required />
+        <input type="text" name="Transaction ID" placeholder="Enter Transaction ID" required />
+        <label style="font-size: 12px; color: #00ffcc;">Upload Payment Screenshot:</label>
+        <input type="file" name="Payment Screenshot" accept="image/*" required />
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </section>
 
-    <section>
-      <h2>🎁 Crate Keys</h2>
-      <div class="products">
-        <div class="product">
-  <h3>Basic Key (x2 = ₹15)</h3>
-  <p>₹15</p>
-  <button>Buy</button>
-  <form action="https://formsubmit.co/meyfuzrhman@gmail.com" method="POST">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/UPI-QR-code-sample.png" alt="UPI QR" />
-    <input type="text" name="In-Game Name" placeholder="Enter your Minecraft name" required />
-    <select name="Quantity" required><option value="1">2 keys = ₹15</option><option value="2">4 keys = ₹30</option><option value="3">6 keys = ₹45</option><option value="4">8 keys = ₹60</option><option value="5">10 keys = ₹75</option></select>
-    <input type="hidden" name="_subject" value="Basic Key (x2 = ₹15) Purchase" />
-    <button type="submit">Submit</button>
-  </form>
-</div>
-<div class="product">
-  <h3>Legendary Key (x2 = ₹46)</h3>
-  <p>₹46</p>
-  <button>Buy</button>
-  <form action="https://formsubmit.co/meyfuzrhman@gmail.com" method="POST">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/UPI-QR-code-sample.png" alt="UPI QR" />
-    <input type="text" name="In-Game Name" placeholder="Enter your Minecraft name" required />
-    <select name="Quantity" required><option value="1">2 keys = ₹46</option><option value="2">4 keys = ₹92</option><option value="3">6 keys = ₹138</option><option value="4">8 keys = ₹184</option><option value="5">10 keys = ₹230</option></select>
-    <input type="hidden" name="_subject" value="Legendary Key (x2 = ₹46) Purchase" />
-    <button type="submit">Submit</button>
-  </form>
-</div>
-<div class="product">
-  <h3>Inferno Key (x1 = ₹69)</h3>
-  <p>₹69</p>
-  <button>Buy</button>
-  <form action="https://formsubmit.co/meyfuzrhman@gmail.com" method="POST">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/UPI-QR-code-sample.png" alt="UPI QR" />
-    <input type="text" name="In-Game Name" placeholder="Enter your Minecraft name" required />
-    <select name="Quantity" required><option value="1">1 keys = ₹69</option><option value="2">2 keys = ₹138</option><option value="3">3 keys = ₹207</option><option value="4">4 keys = ₹276</option><option value="5">5 keys = ₹345</option></select>
-    <input type="hidden" name="_subject" value="Inferno Key (x1 = ₹69) Purchase" />
-    <button type="submit">Submit</button>
-  </form>
-</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>💰 In-Game Money</h2>
-      <div class="products">
-        <div class="product">
-  <h3>In-Game Money (₹15 per 10,000)</h3>
-  <p>₹15+</p>
-  <button>Buy</button>
-  <form action="https://formsubmit.co/meyfuzrhman@gmail.com" method="POST">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/UPI-QR-code-sample.png" alt="UPI QR" />
-    <input type="text" name="In-Game Name" placeholder="Enter your Minecraft name" required />
-    <select name="Money Amount" required><option value="1k">10000 = ₹15</option><option value="2k">20000 = ₹30</option><option value="3k">30000 = ₹45</option><option value="4k">40000 = ₹60</option><option value="5k">50000 = ₹75</option><option value="6k">60000 = ₹90</option><option value="7k">70000 = ₹105</option><option value="8k">80000 = ₹120</option><option value="9k">90000 = ₹135</option><option value="10k">100000 = ₹150</option></select>
-    <input type="hidden" name="_subject" value="In-Game Money (₹15 per 10,000) Purchase" />
-    <button type="submit">Submit</button>
-  </form>
-</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>❤️ Lifesteal Hearts</h2>
-      <div class="products">
-        <div class="product">
-  <h3>Lifesteal Hearts (₹15 per heart)</h3>
-  <p>₹15+</p>
-  <button>Buy</button>
-  <form action="https://formsubmit.co/meyfuzrhman@gmail.com" method="POST">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/UPI-QR-code-sample.png" alt="UPI QR" />
-    <input type="text" name="In-Game Name" placeholder="Enter your Minecraft name" required />
-    <select name="Heart Quantity" required><option value="1">1 heart(s) = ₹15</option><option value="2">2 heart(s) = ₹30</option><option value="3">3 heart(s) = ₹45</option><option value="4">4 heart(s) = ₹60</option><option value="5">5 heart(s) = ₹75</option><option value="6">6 heart(s) = ₹90</option><option value="7">7 heart(s) = ₹105</option><option value="8">8 heart(s) = ₹120</option><option value="9">9 heart(s) = ₹135</option><option value="10">10 heart(s) = ₹150</option></select>
-    <input type="hidden" name="_subject" value="Lifesteal Hearts (₹15 per heart) Purchase" />
-    <button type="submit">Submit</button>
-  </form>
-</div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>Payments via UPI – <strong>gamingdelhi0@ybl</strong></p>
-  </footer>
-
-  <script src="script.js"></script>
+  <script>
+    function scrollToForm() {
+      document.querySelector('form').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
